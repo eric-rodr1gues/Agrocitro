@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Colheita</title>
+    <link rel="stylesheet" href="CSS/registro-style.css"> 
+</head>
+<body>
+    <div class="container">
+        
+        <div class="form-container">
+            <h2>Registrar Colheita</h2>
+            <form id="colheita-form">
+                <label for="ID_Plantio">ID do Plantio Colhido</label>
+                <input type="number" id="ID_Plantio" name="ID_Plantio" required>
+
+                <label for="Data_Colheita">Data da Colheita</label>
+                <input type="text" id="Data_Colheita" name="Data_Colheita" placeholder="AAAA-MM-DD" required>
+                
+                <label for="Quantidade_Colhida">Quantidade Colhida</label>
+                <input type="number" id="Quantidade_Colhida" name="Quantidade_Colhida" required>
+                
+                <label for="Qualidade">Qualidade (Ex: A, B, C)</label>
+                <input type="text" id="Qualidade" name="Qualidade" required>
+
+                <button type="submit" class="btn-registrar">Registrar Colheita</button>
+            </form>
+        </div>
+
+        <div class="list-container">
+            <h2>Colheitas Registradas</h2>
+            <div class="table-scroll">
+                <table id="colheitas-tabela">
+                    <thead>
+                        <tr>
+                            <th>ID Colheita</th>
+                            <th>ID Plantio</th>
+                            <th>Data</th>
+                            <th>Qtd. Colhida</th>
+                            <th>Qualidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <a href="registro.html" class="btn-link">Voltar para Plantios</a>
+            <a href="irrigacao.html" class="btn-link">Ir para Irrigação</a>
+        </div>
+    </div>
+    <script src="colheita-script.js"></script>
+</body>
+</html>

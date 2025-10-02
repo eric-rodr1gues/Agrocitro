@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Mulish', sans-serif;
+}
+
+:root {
+    font-size: 16px; 
+}
+
+
+body {
+    background-color: #113a11;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.main-content {
+    width: 100%;
+    max-width: 450px;
+}
+
+.fonte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.plantio h1 {
+    font-size: 2.2rem; 
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+
+.total {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+    padding: 30px 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.meio {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100%;
+}
+
+.container h3 {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.container p span#total-mudas {
+    font-size: 4.5rem; 
+    font-weight: 900;
+    color: #4CAF50;
+    display: block;
+    text-align: left;
+}
+
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagem {
+    max-width: 100px; 
+    height: auto;
+}
+
+.fim {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.fonte-data {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.fim p#data {
+    color: #e4e4e4;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+
+@media (min-width: 768px) {
+    
+   
+    .main-content {
+        max-width: 800px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plantio h1 {
+        font-size: 3rem; 
+    }
+
+    .total {
+        padding: 40px;
+       
+        width: 100%; 
+    }
+
+    .meio {
+        justify-content: space-around;
+    }
+    
+    
+    .container p span#total-mudas {
+        font-size: 7rem; 
+    }
+    
+    #imagem {
+        max-width: 180px; 
+    }
+
+    .fim {
+        margin-top: 80px;
+        width: 100%;
+    }
+}
